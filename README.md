@@ -1,2 +1,2 @@
 # Mouse-Mod
-Honestly one of my personal favorites that i made, go join the discord
+Honestly one of my personal favorites that I made, go join the discord
