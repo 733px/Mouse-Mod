@@ -1,1 +1,586 @@
-javascript:(function()%7Bjavascript%3A(function()%20%7B%0Aalert(%22Made%20By%20Kitty_cre%20%238781%5Cn%5CnUSE%20CTRL%20%2B%20X%20TO%20HIDE%5Cn%5CnCTRL%20%2B%20C%20TO%20GO%20TO%20DEFAULT%22)%3B%0A%20%20var%20guiBG%20%3D%20document.createElement(%22button%22)%3B%0A%20%20guiBG.style.position%20%3D%20%22fixed%22%3B%0A%20%20guiBG.style.top%20%3D%20%2235%25%22%3B%0A%20%20guiBG.style.left%20%3D%20%2250%25%22%3B%0A%20%20guiBG.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20guiBG.style.backgroundColor%20%3D%20%22black%22%3B%0A%20%20guiBG.style.color%20%3D%20%22white%22%3B%0A%20%20guiBG.style.padding%20%3D%20%22280px%20100px%22%3B%0A%20%20guiBG.style.borderRadius%20%3D%20%2220px%22%3B%0A%20%20guiBG.style.fontSize%20%3D%20%2220px%22%3B%0A%20%20guiBG.style.cursor%20%3D%20%22default%22%3B%0A%20%20guiBG.innerHTML%20%3D%20%22%22%3B%0A%20%20document.body.appendChild(guiBG)%3B%0A%0A%0A%20%20var%20displayText%20%3D%20document.createElement(%22button%22)%3B%0A%20%20displayText.style.position%20%3D%20%22fixed%22%3B%0A%20%20displayText.style.top%20%3D%20%2240%25%22%3B%0A%20%20displayText.style.left%20%3D%20%2250%25%22%3B%0A%20%20displayText.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20displayText.style.backgroundColor%20%3D%20%22black%22%3B%0A%20%20displayText.style.color%20%3D%20%22white%22%3B%0A%20%20displayText.style.padding%20%3D%20%220px%2030px%22%3B%0A%20%20displayText.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20displayText.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20displayText.style.cursor%20%3D%20%22e-resize%22%3B%0A%20%20displayText.innerHTML%20%3D%20%22Mouse%20Mod%22%3B%0A%20%20document.body.appendChild(displayText)%3B%0A%0A%0A%0A%0A%20%20var%20defaultButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20defaultButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20defaultButton.style.top%20%3D%20%2250%25%22%3B%0A%20%20defaultButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20defaultButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20defaultButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20defaultButton.style.color%20%3D%20%22Black%22%3B%0A%20%20defaultButton.style.padding%20%3D%20%225px%2050px%22%3B%0A%20%20defaultButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20defaultButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20defaultButton.style.cursor%20%3D%20%22default%22%3B%0A%20%20defaultButton.innerHTML%20%3D%20%22Set%20To%20Default%22%3B%0A%20%20document.body.appendChild(defaultButton)%3B%0A%0A%20%20defaultButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22default%22%3B%0A%20%20%7D)%3B%0A%0A%0A%20%20var%20allScrollButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20allScrollButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20allScrollButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20allScrollButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20allScrollButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20allScrollButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20allScrollButton.style.color%20%3D%20%22Black%22%3B%0A%20%20allScrollButton.style.padding%20%3D%20%225px%2045px%22%3B%0A%20%20allScrollButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20allScrollButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20allScrollButton.style.cursor%20%3D%20%22all-scroll%22%3B%0A%20%20allScrollButton.innerHTML%20%3D%20%22Set%20To%20All-Scroll%22%3B%0A%20%20document.body.appendChild(allScrollButton)%3B%0A%0A%20%20allScrollButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22all-scroll%22%3B%0A%20%20%7D)%3B%0A%0A%0A%20%20var%20aliasButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20aliasButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20aliasButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20aliasButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20aliasButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20aliasButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20aliasButton.style.color%20%3D%20%22Black%22%3B%0A%20%20aliasButton.style.padding%20%3D%20%225px%2058px%22%3B%0A%20%20aliasButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20aliasButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20aliasButton.style.cursor%20%3D%20%22alias%22%3B%0A%20%20aliasButton.innerHTML%20%3D%20%22Set%20To%20Alias%22%3B%0A%20%20document.body.appendChild(aliasButton)%3B%0A%0A%20%20aliasButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22alias%22%3B%0A%20%20%7D)%3B%0A%0A%0A%0A%20%20var%20cellButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20cellButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20cellButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20cellButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20cellButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20cellButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20cellButton.style.color%20%3D%20%22Black%22%3B%0A%20%20cellButton.style.padding%20%3D%20%225px%2060px%22%3B%0A%20%20cellButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20cellButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20cellButton.style.cursor%20%3D%20%22cell%22%3B%0A%20%20cellButton.innerHTML%20%3D%20%22Set%20To%20Cell%22%3B%0A%20%20document.body.appendChild(cellButton)%3B%0A%0A%20%20cellButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22cell%22%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20colResizeButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20colResizeButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20colResizeButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20colResizeButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20colResizeButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20colResizeButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20colResizeButton.style.color%20%3D%20%22Black%22%3B%0A%20%20colResizeButton.style.padding%20%3D%20%225px%2035px%22%3B%0A%20%20colResizeButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20colResizeButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20colResizeButton.style.cursor%20%3D%20%22col-resize%22%3B%0A%20%20colResizeButton.innerHTML%20%3D%20%22Set%20To%20Col-Resize%22%3B%0A%20%20document.body.appendChild(colResizeButton)%3B%0A%0A%20%20colResizeButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22col-resize%22%3B%0A%20%20%7D)%3B%0A%0A%0A%0A%20%20var%20copyButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20copyButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20copyButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20copyButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20copyButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20copyButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20copyButton.style.color%20%3D%20%22Black%22%3B%0A%20%20copyButton.style.padding%20%3D%20%225px%2053px%22%3B%0A%20%20copyButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20copyButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20copyButton.style.cursor%20%3D%20%22copy%22%3B%0A%20%20copyButton.innerHTML%20%3D%20%22Set%20To%20Copy%22%3B%0A%20%20document.body.appendChild(copyButton)%3B%0A%0A%20%20copyButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22copy%22%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20eResizeButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20eResizeButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20eResizeButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20eResizeButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20eResizeButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20eResizeButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20eResizeButton.style.color%20%3D%20%22Black%22%3B%0A%20%20eResizeButton.style.padding%20%3D%20%225px%2041px%22%3B%0A%20%20eResizeButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20eResizeButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20eResizeButton.style.cursor%20%3D%20%22e-resize%22%3B%0A%20%20eResizeButton.innerHTML%20%3D%20%22Set%20To%20E-Resize%22%3B%0A%20%20document.body.appendChild(eResizeButton)%3B%0A%0A%20%20eResizeButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22e-resize%22%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20grabButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20grabButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20grabButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20grabButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20grabButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20grabButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20grabButton.style.color%20%3D%20%22Black%22%3B%0A%20%20grabButton.style.padding%20%3D%20%225px%2055px%22%3B%0A%20%20grabButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20grabButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20grabButton.style.cursor%20%3D%20%22grab%22%3B%0A%20%20grabButton.innerHTML%20%3D%20%22Set%20To%20grab%22%3B%0A%20%20document.body.appendChild(grabButton)%3B%0A%0A%20%20grabButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22grab%22%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20helpButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20helpButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20helpButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20helpButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20helpButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20helpButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20helpButton.style.color%20%3D%20%22Black%22%3B%0A%20%20helpButton.style.padding%20%3D%20%225px%2055px%22%3B%0A%20%20helpButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20helpButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20helpButton.style.cursor%20%3D%20%22help%22%3B%0A%20%20helpButton.innerHTML%20%3D%20%22Set%20To%20Help%22%3B%0A%20%20document.body.appendChild(helpButton)%3B%0A%0A%20%20helpButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22help%22%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20notAllowedButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20notAllowedButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20notAllowedButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20notAllowedButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20notAllowedButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20notAllowedButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20notAllowedButton.style.color%20%3D%20%22Black%22%3B%0A%20%20notAllowedButton.style.padding%20%3D%20%225px%2030px%22%3B%0A%20%20notAllowedButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20notAllowedButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20notAllowedButton.style.cursor%20%3D%20%22not-allowed%22%3B%0A%20%20notAllowedButton.innerHTML%20%3D%20%22Set%20To%20Not-Allowed%22%3B%0A%20%20document.body.appendChild(notAllowedButton)%3B%0A%0A%20%20notAllowedButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22not-allowed%22%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20progressButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20progressButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20progressButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20progressButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20progressButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20progressButton.style.backgroundColor%20%3D%20%22Green%22%3B%0A%20%20progressButton.style.color%20%3D%20%22Black%22%3B%0A%20%20progressButton.style.padding%20%3D%20%225px%2040px%22%3B%0A%20%20progressButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20progressButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20progressButton.style.cursor%20%3D%20%22progress%22%3B%0A%20%20progressButton.innerHTML%20%3D%20%22Set%20To%20Progress%22%3B%0A%20%20document.body.appendChild(progressButton)%3B%0A%0A%20%20progressButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22progress%22%3B%0A%20%20%7D)%3B%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%20%20var%20moveButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20moveButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20moveButton.style.top%20%3D%20%2215%25%22%3B%0A%20%20moveButton.style.left%20%3D%20%2286%25%22%3B%0A%20%20moveButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20moveButton.style.backgroundColor%20%3D%20%22%2370706f%22%3B%0A%20%20moveButton.style.color%20%3D%20%22white%22%3B%0A%20%20moveButton.style.padding%20%3D%20%2220px%2020px%22%3B%0A%20%20moveButton.style.borderRadius%20%3D%20%2210px%22%3B%0A%20%20moveButton.style.fontSize%20%3D%20%2220px%22%3B%0A%20%20moveButton.style.cursor%20%3D%20%22all-scroll%22%3B%0A%20%20moveButton.style.backgroundImage%20%3D%20%22url('https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fcss-cursors%2F48%2Fjee-03-512.png')%22%3B%0A%20%20moveButton.style.backgroundSize%20%3D%20%22cover%22%3B%0A%20%20moveButton.innerHTML%20%3D%20%22%22%3B%0A%20%20document.body.appendChild(moveButton)%3B%0A%0A%20%20var%20discordButton%3D%20document.createElement(%22button%22)%3B%0A%20%20discordButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20discordButton.style.top%20%3D%20%2240%25%22%3B%0A%20%20discordButton.style.left%20%3D%20%2250%25%22%3B%0A%20%20discordButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20discordButton.style.backgroundColor%20%3D%20%22blue%22%3B%0A%20%20discordButton.style.color%20%3D%20%22Black%22%3B%0A%20%20discordButton.style.padding%20%3D%20%225px%2060px%22%3B%0A%20%20discordButton.style.borderRadius%20%3D%20%225px%22%3B%0A%20%20discordButton.style.fontSize%20%3D%20%2215px%22%3B%0A%20%20discordButton.style.cursor%20%3D%20%22progress%22%3B%0A%20%20discordButton.innerHTML%20%3D%20%22Discord%20%3B)%22%3B%0A%20%20document.body.appendChild(discordButton)%3B%0A%0A%20%20discordButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20window.open(%22https%3A%2F%2Fdiscord.gg%2F6jHEK5YYRz%22)%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20hideButton%20%3D%20document.createElement(%22button%22)%3B%0A%20%20hideButton.style.position%20%3D%20%22fixed%22%3B%0A%20%20hideButton.style.top%20%3D%20%2215%25%22%3B%0A%20%20hideButton.style.left%20%3D%20%2286%25%22%3B%0A%20%20hideButton.style.transform%20%3D%20%22translate(-50%25%2C%20-50%25)%22%3B%0A%20%20hideButton.style.backgroundColor%20%3D%20%22%2370706f%22%3B%0A%20%20hideButton.style.color%20%3D%20%22white%22%3B%0A%20%20hideButton.style.padding%20%3D%20%225px%200px%22%3B%0A%20%20hideButton.style.borderRadius%20%3D%20%2210px%22%3B%0A%20%20hideButton.style.fontSize%20%3D%20%2220px%22%3B%0A%20%20hideButton.style.cursor%20%3D%20%22not-allowed%22%3B%0A%20%20hideButton.innerHTML%20%3D%20%22Hide%22%3B%0A%20%20document.body.appendChild(hideButton)%3B%0A%0A%0A%0A%20%20hideButton.addEventListener(%22click%22%2C%20function()%20%7B%0A%20%20%20%20%20%20%20%20if%20(guiBG.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20guiBG.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20guiBG.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20if%20(discordButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20discordButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20discordButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20if%20(displayText.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20displayText.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20displayText.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%0A%20%20%20%20%20%20%20%20if%20(allScrollButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20allScrollButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20allScrollButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20if%20(defaultButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20defaultButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20defaultButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20if%20(aliasButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20aliasButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20aliasButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(cellButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20cellButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20cellButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(colResizeButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20colResizeButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20colResizeButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(copyButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20copyButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20copyButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(eResizeButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20eResizeButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20eResizeButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(grabButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20grabButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20grabButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(helpButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20helpButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20helpButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(progressButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20progressButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20progressButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20%20%20%20%20if%20(notAllowedButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20notAllowedButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20notAllowedButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%0A%0A%0A%20%20%7D)%3B%0A%0A%0A%0A%20document.addEventListener(%22keydown%22%2C%20function(event)%20%7B%0A%20%20%20%20if%20(event.ctrlKey%20%26%26%20event.key%20%3D%3D%3D%20%22c%22)%20%7B%0A%20%20%20%20document.body.style.cursor%20%3D%20%22default%22%3B%0A%7D%0A%7D)%3B%0A%0A%0A%0A%20document.addEventListener(%22keydown%22%2C%20function(event)%20%7B%0A%20%20%20%20if%20(event.ctrlKey%20%26%26%20event.key%20%3D%3D%3D%20%22x%22)%20%7B%0A%20%20if%20(discordButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20discordButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20discordButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%20%20if%20(displayText.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20displayText.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20displayText.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%7D%0A%20%20if%20(moveButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20moveButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20moveButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20if%20(hideButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20hideButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20hideButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(guiBG.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20guiBG.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20guiBG.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(allScrollButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20allScrollButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20allScrollButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(defaultButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20defaultButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20defaultButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(aliasButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20aliasButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20aliasButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(cellButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20cellButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20cellButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(colResizeButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20colResizeButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20colResizeButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(copyButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20copyButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20copyButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(eResizeButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20eResizeButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20eResizeButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(grabButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20grabButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20grabButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(helpButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20helpButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20helpButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(progressButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20progressButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20progressButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20if%20(notAllowedButton.style.display%20%3D%3D%3D%20%22none%22)%20%7B%0A%20%20%20%20%20%20%20%20notAllowedButton.style.display%20%3D%20%22%22%3B%0A%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20notAllowedButton.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%0A%0A%0A%0A%0A%20%20var%20isDragging%20%3D%20false%3B%0A%20%20var%20mouseOffset%20%3D%20%7B%20x%3A%200%2C%20y%3A%200%20%7D%3B%0A%0A%20%20function%20updateButtonPosition()%20%7B%0A%20%20%20%20guiBG.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20guiBG.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20180)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20displayText.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20displayText.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20-%2080)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20hideButton.style.left%20%3D%20(moveButton.offsetLeft%20%2B%20moveButton.offsetWidth%20%2B%2010)%20%2B%20%22px%22%3B%0A%20%20%20%20hideButton.style.top%20%3D%20moveButton.offsetTop%3B%0A%0A%20%20%20%20defaultButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20defaultButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20-%200)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20allScrollButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20allScrollButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%2040)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20aliasButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20aliasButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%2080)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20cellButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20cellButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20120)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20colResizeButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20colResizeButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20160)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20copyButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20copyButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20200)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20eResizeButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20eResizeButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20240)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20grabButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20grabButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20280)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20helpButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20helpButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20320)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20progressButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20progressButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20360)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20notAllowedButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20notAllowedButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20400)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20discordButton.style.left%20%3D%20moveButton.offsetLeft%3B%0A%20%20%20%20discordButton.style.top%20%3D%20(moveButton.offsetTop%20%2B%20moveButton.offsetHeight%20%2B%20440)%20%2B%20%22px%22%3B%0A%0A%20%20%7D%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%20%20moveButton.addEventListener(%22mousedown%22%2C%20function(event)%20%7B%0A%20%20%20%20isDragging%20%3D%20true%3B%0A%20%20%20%20mouseOffset.x%20%3D%20event.clientX%20-%20moveButton.offsetLeft%3B%0A%20%20%20%20mouseOffset.y%20%3D%20event.clientY%20-%20moveButton.offsetTop%3B%0A%20%20%7D)%3B%0A%0A%20%20document.addEventListener(%22mousemove%22%2C%20function(event)%20%7B%0A%20%20%20%20if%20(isDragging)%20%7B%20%20%20%20%20%20%0A%20%20%20%20%20%20updateButtonPosition()%3B%0A%20%20%20%20%20%20moveButton.style.left%20%3D%20(event.clientX%20-%20mouseOffset.x)%20%2B%20%22px%22%3B%0A%20%20%20%20%20%20moveButton.style.top%20%3D%20(event.clientY%20-%20mouseOffset.y)%20%2B%20%22px%22%3B%0A%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%0A%0A%0A%0A%0A%20%20document.addEventListener(%22mouseup%22%2C%20function()%20%7B%0A%20%20%20%20isDragging%20%3D%20false%3B%0A%20%20%7D)%3B%0A%20%20setInterval(function()%20%7B%0AupdateButtonPosition()%3B%0A%7D%2C%20100)%3B%0A%7D)()%3B%7D)()%3B
+javascript:(function() {
+alert("Made By Kitty_cre #8781\n\nUSE CTRL + X TO HIDE\n\nCTRL + C TO GO TO DEFAULT");
+  var guiBG = document.createElement("button");
+  guiBG.style.position = "fixed";
+  guiBG.style.top = "35%";
+  guiBG.style.left = "50%";
+  guiBG.style.transform = "translate(-50%, -50%)";
+  guiBG.style.backgroundColor = "black";
+  guiBG.style.color = "white";
+  guiBG.style.padding = "280px 100px";
+  guiBG.style.borderRadius = "20px";
+  guiBG.style.fontSize = "20px";
+  guiBG.style.cursor = "default";
+  guiBG.innerHTML = "";
+  document.body.appendChild(guiBG);
+
+
+  var displayText = document.createElement("button");
+  displayText.style.position = "fixed";
+  displayText.style.top = "40%";
+  displayText.style.left = "50%";
+  displayText.style.transform = "translate(-50%, -50%)";
+  displayText.style.backgroundColor = "black";
+  displayText.style.color = "white";
+  displayText.style.padding = "0px 30px";
+  displayText.style.borderRadius = "5px";
+  displayText.style.fontSize = "15px";
+  displayText.style.cursor = "e-resize";
+  displayText.innerHTML = "Mouse Mod";
+  document.body.appendChild(displayText);
+
+
+
+
+  var defaultButton = document.createElement("button");
+  defaultButton.style.position = "fixed";
+  defaultButton.style.top = "50%";
+  defaultButton.style.left = "50%";
+  defaultButton.style.transform = "translate(-50%, -50%)";
+  defaultButton.style.backgroundColor = "Green";
+  defaultButton.style.color = "Black";
+  defaultButton.style.padding = "5px 50px";
+  defaultButton.style.borderRadius = "5px";
+  defaultButton.style.fontSize = "15px";
+  defaultButton.style.cursor = "default";
+  defaultButton.innerHTML = "Set To Default";
+  document.body.appendChild(defaultButton);
+
+  defaultButton.addEventListener("click", function() {
+    document.body.style.cursor = "default";
+  });
+
+
+  var allScrollButton = document.createElement("button");
+  allScrollButton.style.position = "fixed";
+  allScrollButton.style.top = "40%";
+  allScrollButton.style.left = "50%";
+  allScrollButton.style.transform = "translate(-50%, -50%)";
+  allScrollButton.style.backgroundColor = "Green";
+  allScrollButton.style.color = "Black";
+  allScrollButton.style.padding = "5px 45px";
+  allScrollButton.style.borderRadius = "5px";
+  allScrollButton.style.fontSize = "15px";
+  allScrollButton.style.cursor = "all-scroll";
+  allScrollButton.innerHTML = "Set To All-Scroll";
+  document.body.appendChild(allScrollButton);
+
+  allScrollButton.addEventListener("click", function() {
+    document.body.style.cursor = "all-scroll";
+  });
+
+
+  var aliasButton = document.createElement("button");
+  aliasButton.style.position = "fixed";
+  aliasButton.style.top = "40%";
+  aliasButton.style.left = "50%";
+  aliasButton.style.transform = "translate(-50%, -50%)";
+  aliasButton.style.backgroundColor = "Green";
+  aliasButton.style.color = "Black";
+  aliasButton.style.padding = "5px 58px";
+  aliasButton.style.borderRadius = "5px";
+  aliasButton.style.fontSize = "15px";
+  aliasButton.style.cursor = "alias";
+  aliasButton.innerHTML = "Set To Alias";
+  document.body.appendChild(aliasButton);
+
+  aliasButton.addEventListener("click", function() {
+    document.body.style.cursor = "alias";
+  });
+
+
+
+  var cellButton = document.createElement("button");
+  cellButton.style.position = "fixed";
+  cellButton.style.top = "40%";
+  cellButton.style.left = "50%";
+  cellButton.style.transform = "translate(-50%, -50%)";
+  cellButton.style.backgroundColor = "Green";
+  cellButton.style.color = "Black";
+  cellButton.style.padding = "5px 60px";
+  cellButton.style.borderRadius = "5px";
+  cellButton.style.fontSize = "15px";
+  cellButton.style.cursor = "cell";
+  cellButton.innerHTML = "Set To Cell";
+  document.body.appendChild(cellButton);
+
+  cellButton.addEventListener("click", function() {
+    document.body.style.cursor = "cell";
+  });
+
+  var colResizeButton = document.createElement("button");
+  colResizeButton.style.position = "fixed";
+  colResizeButton.style.top = "40%";
+  colResizeButton.style.left = "50%";
+  colResizeButton.style.transform = "translate(-50%, -50%)";
+  colResizeButton.style.backgroundColor = "Green";
+  colResizeButton.style.color = "Black";
+  colResizeButton.style.padding = "5px 35px";
+  colResizeButton.style.borderRadius = "5px";
+  colResizeButton.style.fontSize = "15px";
+  colResizeButton.style.cursor = "col-resize";
+  colResizeButton.innerHTML = "Set To Col-Resize";
+  document.body.appendChild(colResizeButton);
+
+  colResizeButton.addEventListener("click", function() {
+    document.body.style.cursor = "col-resize";
+  });
+
+
+
+  var copyButton = document.createElement("button");
+  copyButton.style.position = "fixed";
+  copyButton.style.top = "40%";
+  copyButton.style.left = "50%";
+  copyButton.style.transform = "translate(-50%, -50%)";
+  copyButton.style.backgroundColor = "Green";
+  copyButton.style.color = "Black";
+  copyButton.style.padding = "5px 53px";
+  copyButton.style.borderRadius = "5px";
+  copyButton.style.fontSize = "15px";
+  copyButton.style.cursor = "copy";
+  copyButton.innerHTML = "Set To Copy";
+  document.body.appendChild(copyButton);
+
+  copyButton.addEventListener("click", function() {
+    document.body.style.cursor = "copy";
+  });
+
+  var eResizeButton = document.createElement("button");
+  eResizeButton.style.position = "fixed";
+  eResizeButton.style.top = "40%";
+  eResizeButton.style.left = "50%";
+  eResizeButton.style.transform = "translate(-50%, -50%)";
+  eResizeButton.style.backgroundColor = "Green";
+  eResizeButton.style.color = "Black";
+  eResizeButton.style.padding = "5px 41px";
+  eResizeButton.style.borderRadius = "5px";
+  eResizeButton.style.fontSize = "15px";
+  eResizeButton.style.cursor = "e-resize";
+  eResizeButton.innerHTML = "Set To E-Resize";
+  document.body.appendChild(eResizeButton);
+
+  eResizeButton.addEventListener("click", function() {
+    document.body.style.cursor = "e-resize";
+  });
+
+  var grabButton = document.createElement("button");
+  grabButton.style.position = "fixed";
+  grabButton.style.top = "40%";
+  grabButton.style.left = "50%";
+  grabButton.style.transform = "translate(-50%, -50%)";
+  grabButton.style.backgroundColor = "Green";
+  grabButton.style.color = "Black";
+  grabButton.style.padding = "5px 55px";
+  grabButton.style.borderRadius = "5px";
+  grabButton.style.fontSize = "15px";
+  grabButton.style.cursor = "grab";
+  grabButton.innerHTML = "Set To grab";
+  document.body.appendChild(grabButton);
+
+  grabButton.addEventListener("click", function() {
+    document.body.style.cursor = "grab";
+  });
+
+  var helpButton = document.createElement("button");
+  helpButton.style.position = "fixed";
+  helpButton.style.top = "40%";
+  helpButton.style.left = "50%";
+  helpButton.style.transform = "translate(-50%, -50%)";
+  helpButton.style.backgroundColor = "Green";
+  helpButton.style.color = "Black";
+  helpButton.style.padding = "5px 55px";
+  helpButton.style.borderRadius = "5px";
+  helpButton.style.fontSize = "15px";
+  helpButton.style.cursor = "help";
+  helpButton.innerHTML = "Set To Help";
+  document.body.appendChild(helpButton);
+
+  helpButton.addEventListener("click", function() {
+    document.body.style.cursor = "help";
+  });
+
+  var notAllowedButton = document.createElement("button");
+  notAllowedButton.style.position = "fixed";
+  notAllowedButton.style.top = "40%";
+  notAllowedButton.style.left = "50%";
+  notAllowedButton.style.transform = "translate(-50%, -50%)";
+  notAllowedButton.style.backgroundColor = "Green";
+  notAllowedButton.style.color = "Black";
+  notAllowedButton.style.padding = "5px 30px";
+  notAllowedButton.style.borderRadius = "5px";
+  notAllowedButton.style.fontSize = "15px";
+  notAllowedButton.style.cursor = "not-allowed";
+  notAllowedButton.innerHTML = "Set To Not-Allowed";
+  document.body.appendChild(notAllowedButton);
+
+  notAllowedButton.addEventListener("click", function() {
+    document.body.style.cursor = "not-allowed";
+  });
+
+  var progressButton = document.createElement("button");
+  progressButton.style.position = "fixed";
+  progressButton.style.top = "40%";
+  progressButton.style.left = "50%";
+  progressButton.style.transform = "translate(-50%, -50%)";
+  progressButton.style.backgroundColor = "Green";
+  progressButton.style.color = "Black";
+  progressButton.style.padding = "5px 40px";
+  progressButton.style.borderRadius = "5px";
+  progressButton.style.fontSize = "15px";
+  progressButton.style.cursor = "progress";
+  progressButton.innerHTML = "Set To Progress";
+  document.body.appendChild(progressButton);
+
+  progressButton.addEventListener("click", function() {
+    document.body.style.cursor = "progress";
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+  var moveButton = document.createElement("button");
+  moveButton.style.position = "fixed";
+  moveButton.style.top = "15%";
+  moveButton.style.left = "86%";
+  moveButton.style.transform = "translate(-50%, -50%)";
+  moveButton.style.backgroundColor = "#70706f";
+  moveButton.style.color = "white";
+  moveButton.style.padding = "20px 20px";
+  moveButton.style.borderRadius = "10px";
+  moveButton.style.fontSize = "20px";
+  moveButton.style.cursor = "all-scroll";
+  moveButton.style.backgroundImage = "url('https://cdn4.iconfinder.com/data/icons/css-cursors/48/jee-03-512.png')";
+  moveButton.style.backgroundSize = "cover";
+  moveButton.innerHTML = "";
+  document.body.appendChild(moveButton);
+
+  var discordButton= document.createElement("button");
+  discordButton.style.position = "fixed";
+  discordButton.style.top = "40%";
+  discordButton.style.left = "50%";
+  discordButton.style.transform = "translate(-50%, -50%)";
+  discordButton.style.backgroundColor = "blue";
+  discordButton.style.color = "Black";
+  discordButton.style.padding = "5px 60px";
+  discordButton.style.borderRadius = "5px";
+  discordButton.style.fontSize = "15px";
+  discordButton.style.cursor = "progress";
+  discordButton.innerHTML = "Discord ;)";
+  document.body.appendChild(discordButton);
+
+  discordButton.addEventListener("click", function() {
+    window.open("https://discord.gg/6jHEK5YYRz");
+  });
+
+  var hideButton = document.createElement("button");
+  hideButton.style.position = "fixed";
+  hideButton.style.top = "15%";
+  hideButton.style.left = "86%";
+  hideButton.style.transform = "translate(-50%, -50%)";
+  hideButton.style.backgroundColor = "#70706f";
+  hideButton.style.color = "white";
+  hideButton.style.padding = "5px 0px";
+  hideButton.style.borderRadius = "10px";
+  hideButton.style.fontSize = "20px";
+  hideButton.style.cursor = "not-allowed";
+  hideButton.innerHTML = "Hide";
+  document.body.appendChild(hideButton);
+
+
+
+  hideButton.addEventListener("click", function() {
+        if (guiBG.style.display === "none") {
+      guiBG.style.display = "";
+    } else {
+      guiBG.style.display = "none";
+    }
+
+
+  if (discordButton.style.display === "none") {
+      discordButton.style.display = "";
+    } else {
+      discordButton.style.display = "none";
+    }
+
+
+  if (displayText.style.display === "none") {
+      displayText.style.display = "";
+    } else {
+      displayText.style.display = "none";
+    }
+
+
+
+        if (allScrollButton.style.display === "none") {
+      allScrollButton.style.display = "";
+    } else {
+      allScrollButton.style.display = "none";
+    }
+
+        if (defaultButton.style.display === "none") {
+      defaultButton.style.display = "";
+    } else {
+      defaultButton.style.display = "none";
+    }
+
+        if (aliasButton.style.display === "none") {
+      aliasButton.style.display = "";
+    } else {
+      aliasButton.style.display = "none";
+    }
+
+
+        if (cellButton.style.display === "none") {
+      cellButton.style.display = "";
+    } else {
+      cellButton.style.display = "none";
+    }
+
+
+        if (colResizeButton.style.display === "none") {
+      colResizeButton.style.display = "";
+    } else {
+      colResizeButton.style.display = "none";
+    }
+
+
+        if (copyButton.style.display === "none") {
+      copyButton.style.display = "";
+    } else {
+      copyButton.style.display = "none";
+    }
+
+
+        if (eResizeButton.style.display === "none") {
+      eResizeButton.style.display = "";
+    } else {
+      eResizeButton.style.display = "none";
+    }
+
+
+        if (grabButton.style.display === "none") {
+      grabButton.style.display = "";
+    } else {
+      grabButton.style.display = "none";
+    }
+
+
+        if (helpButton.style.display === "none") {
+      helpButton.style.display = "";
+    } else {
+      helpButton.style.display = "none";
+    }
+
+
+        if (progressButton.style.display === "none") {
+      progressButton.style.display = "";
+    } else {
+      progressButton.style.display = "none";
+    }
+
+
+        if (notAllowedButton.style.display === "none") {
+      notAllowedButton.style.display = "";
+    } else {
+      notAllowedButton.style.display = "none";
+    }
+
+
+
+  });
+
+
+
+ document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.key === "c") {
+    document.body.style.cursor = "default";
+}
+});
+
+
+
+ document.addEventListener("keydown", function(event) {
+    if (event.ctrlKey && event.key === "x") {
+  if (discordButton.style.display === "none") {
+      discordButton.style.display = "";
+    } else {
+      discordButton.style.display = "none";
+    }
+  if (displayText.style.display === "none") {
+      displayText.style.display = "";
+    } else {
+      displayText.style.display = "none";
+    }
+  if (moveButton.style.display === "none") {
+        moveButton.style.display = "";
+      } else {
+        moveButton.style.display = "none";
+      }
+  if (hideButton.style.display === "none") {
+        hideButton.style.display = "";
+      } else {
+        hideButton.style.display = "none";
+      }
+      if (guiBG.style.display === "none") {
+        guiBG.style.display = "";
+      } else {
+        guiBG.style.display = "none";
+      }
+      if (allScrollButton.style.display === "none") {
+        allScrollButton.style.display = "";
+      } else {
+        allScrollButton.style.display = "none";
+      }
+      if (defaultButton.style.display === "none") {
+        defaultButton.style.display = "";
+      } else {
+        defaultButton.style.display = "none";
+      }
+      if (aliasButton.style.display === "none") {
+        aliasButton.style.display = "";
+      } else {
+        aliasButton.style.display = "none";
+      }
+      if (cellButton.style.display === "none") {
+        cellButton.style.display = "";
+      } else {
+        cellButton.style.display = "none";
+      }
+      if (colResizeButton.style.display === "none") {
+        colResizeButton.style.display = "";
+      } else {
+        colResizeButton.style.display = "none";
+      }
+      if (copyButton.style.display === "none") {
+        copyButton.style.display = "";
+      } else {
+        copyButton.style.display = "none";
+      }
+      if (eResizeButton.style.display === "none") {
+        eResizeButton.style.display = "";
+      } else {
+        eResizeButton.style.display = "none";
+      }
+      if (grabButton.style.display === "none") {
+        grabButton.style.display = "";
+      } else {
+        grabButton.style.display = "none";
+      }
+      if (helpButton.style.display === "none") {
+        helpButton.style.display = "";
+      } else {
+        helpButton.style.display = "none";
+      }
+      if (progressButton.style.display === "none") {
+        progressButton.style.display = "";
+      } else {
+        progressButton.style.display = "none";
+      }
+      if (notAllowedButton.style.display === "none") {
+        notAllowedButton.style.display = "";
+      } else {
+        notAllowedButton.style.display = "none";
+      }
+    }
+  });
+
+
+
+
+
+  var isDragging = false;
+  var mouseOffset = { x: 0, y: 0 };
+
+  function updateButtonPosition() {
+    guiBG.style.left = moveButton.offsetLeft;
+    guiBG.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 180) + "px";
+
+    displayText.style.left = moveButton.offsetLeft;
+    displayText.style.top = (moveButton.offsetTop + moveButton.offsetHeight - 80) + "px";
+
+    hideButton.style.left = (moveButton.offsetLeft + moveButton.offsetWidth + 10) + "px";
+    hideButton.style.top = moveButton.offsetTop;
+
+    defaultButton.style.left = moveButton.offsetLeft;
+    defaultButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight - 0) + "px";
+
+    allScrollButton.style.left = moveButton.offsetLeft;
+    allScrollButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 40) + "px";
+
+    aliasButton.style.left = moveButton.offsetLeft;
+    aliasButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 80) + "px";
+
+    cellButton.style.left = moveButton.offsetLeft;
+    cellButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 120) + "px";
+
+    colResizeButton.style.left = moveButton.offsetLeft;
+    colResizeButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 160) + "px";
+
+    copyButton.style.left = moveButton.offsetLeft;
+    copyButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 200) + "px";
+
+    eResizeButton.style.left = moveButton.offsetLeft;
+    eResizeButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 240) + "px";
+
+    grabButton.style.left = moveButton.offsetLeft;
+    grabButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 280) + "px";
+
+    helpButton.style.left = moveButton.offsetLeft;
+    helpButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 320) + "px";
+
+    progressButton.style.left = moveButton.offsetLeft;
+    progressButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 360) + "px";
+
+    notAllowedButton.style.left = moveButton.offsetLeft;
+    notAllowedButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 400) + "px";
+
+    discordButton.style.left = moveButton.offsetLeft;
+    discordButton.style.top = (moveButton.offsetTop + moveButton.offsetHeight + 440) + "px";
+
+  }
+
+
+
+
+
+
+
+
+
+  moveButton.addEventListener("mousedown", function(event) {
+    isDragging = true;
+    mouseOffset.x = event.clientX - moveButton.offsetLeft;
+    mouseOffset.y = event.clientY - moveButton.offsetTop;
+  });
+
+  document.addEventListener("mousemove", function(event) {
+    if (isDragging) {      
+      updateButtonPosition();
+      moveButton.style.left = (event.clientX - mouseOffset.x) + "px";
+      moveButton.style.top = (event.clientY - mouseOffset.y) + "px";
+
+    }
+  });
+
+
+
+
+
+  document.addEventListener("mouseup", function() {
+    isDragging = false;
+  });
+  setInterval(function() {
+updateButtonPosition();
+}, 100);
+})();
+
+
